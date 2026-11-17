@@ -19,7 +19,7 @@ A personal data inventory page for your Filament panel, built on [laravel-gdpr](
 - One card per model in `gdpr.models`, one row per declared column.
 - Special category (Art. 9) and criminal (Art. 10) data highlighted.
 - Columns without a lawful basis (Art. 6) flagged as "Not declared".
-- English (more languages coming).
+- 19 languages.
 
 ## Compatibility
 
