@@ -2,17 +2,18 @@
 
 namespace JeffersonGoncalves\Filament\Gdpr;
 
+use JeffersonGoncalves\FilamentPluginCore\BasePackageServiceProvider;
 use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class GdprServiceProvider extends PackageServiceProvider
+class GdprServiceProvider extends BasePackageServiceProvider
 {
+    public static string $name = 'filament-gdpr';
+
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('filament-gdpr')
-            ->hasConfigFile()
+            ->name(static::$name)
             ->hasViews()
-            ->hasMigrations();
+            ->hasTranslations();
     }
 }
